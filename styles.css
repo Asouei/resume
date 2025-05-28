@@ -1,0 +1,305 @@
+:root {
+    --font-main: 'Inter', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+
+    --color-bg: #FAF8F6;
+    --color-text: #1C1C1C;
+    --color-accent: #E03E3E;
+    --color-border: #EAEAEA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: var(--color-bg);
+    z-index: 1000;
+}
+
+
+.navbar {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: var(--color-bg);
+
+}
+
+.navbar__items {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--color-accent);
+
+}
+
+
+
+p{
+    font-size: 20px;
+}
+
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+
+
+}
+.hero__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 40px;
+
+}
+
+
+
+
+.hero__content {
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 60px 0;
+    gap: 1.2em;
+}
+
+
+
+.hero__image {
+    flex: 0 0 40%;
+}
+
+.hero__job{
+    margin-top: -1em;
+}
+
+.hero__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+H1 {
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-accent);
+}
+H2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .hero__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hero__content {
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+.center{
+    align-self: center;
+}
+
+
+.buttons {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.btn {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    border: 2px solid var(--color-accent);
+    box-sizing: border-box;
+
+}
+
+#about {
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #about {
+        text-align: center;
+    }
+}
+
+.tech__stack {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+.technology__card{
+    list-style: none;
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid var(--color-accent);
+
+}
+
+.project_card{
+    padding: 0.6em;
+}
+
+.project_stack{
+    padding: 0;
+}
+
+#projects {
+    padding: 0 40px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1em;
+
+}
+
+
+.project-card {
+    border-radius: 8px;
+    border: 1px solid var(--color-accent);
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+#contact{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    list-style: none;
+    gap: 2em;
+}
+.contact__icon{
+    max-width: 32px;
+    height: auto;
+}
+
+.contact__card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+footer{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
